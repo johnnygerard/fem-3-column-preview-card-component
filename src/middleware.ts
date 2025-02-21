@@ -7,6 +7,7 @@ const FIRST_PATH_SEGMENT = /^\/([^/]+)/;
 export const middleware = (request: NextRequest) => {
   const { pathname } = request.nextUrl;
   const match = pathname.match(FIRST_PATH_SEGMENT);
+  // @ts-expect-error string type is expected
   const hasLocale = match && AVAILABLE_LOCALES.includes(match[1]);
 
   if (hasLocale) return;
