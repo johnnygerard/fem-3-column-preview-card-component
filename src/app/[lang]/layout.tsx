@@ -1,3 +1,4 @@
+import { AVAILABLE_LOCALES } from "@/constant/i18n";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -37,15 +38,21 @@ export const metadata: Metadata = {
   },
 };
 
+export const generateStaticParams = async () =>
+  AVAILABLE_LOCALES.map((locale) => ({ lang: locale }));
+
 type Props = {
   children: ReactNode;
+  params: Promise<{ lang: string }>;
 };
 
-const RootLayout = ({ children }: Props) => {
+const RootLayout = async ({ children, params }: Props) => {
+  const { lang } = await params;
+
   return (
     <html
       className={clsx(geistSans.variable, "font-sans antialiased")}
-      lang="en-US"
+      lang={lang}
     >
       <body>
         {children}
