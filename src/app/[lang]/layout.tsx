@@ -1,4 +1,5 @@
 import { AVAILABLE_LOCALES } from "@/constant/i18n";
+import { AppLocale } from "@/type/app-locale";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -43,7 +44,7 @@ export const generateStaticParams = async () =>
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: AppLocale }>;
 };
 
 const RootLayout = async ({ children, params }: Props) => {
