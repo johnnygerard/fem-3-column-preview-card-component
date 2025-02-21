@@ -1,3 +1,4 @@
+import "server-only";
 import { AppLocale } from "@/type/app-locale";
 
 // This object is structured specifically to allow the TypeScript system to

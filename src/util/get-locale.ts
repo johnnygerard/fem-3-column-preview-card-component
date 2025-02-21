@@ -1,3 +1,4 @@
+import "server-only";
 import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from "@/constant/i18n";
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
