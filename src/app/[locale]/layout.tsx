@@ -40,20 +40,20 @@ export const metadata: Metadata = {
 };
 
 export const generateStaticParams = async () =>
-  AVAILABLE_LOCALES.map((locale) => ({ lang: locale }));
+  AVAILABLE_LOCALES.map((locale) => ({ locale }));
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ lang: AppLocale }>;
+  params: Promise<{ locale: AppLocale }>;
 };
 
 const RootLayout = async ({ children, params }: Props) => {
-  const { lang } = await params;
+  const { locale } = await params;
 
   return (
     <html
       className={clsx(geistSans.variable, "font-sans antialiased")}
-      lang={lang}
+      lang={locale}
     >
       <body>
         {children}
