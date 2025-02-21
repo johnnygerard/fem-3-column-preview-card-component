@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "app": {
+      "name": "3-column preview card component",
+      "description": "Frontend Mentor Challenge: 3-column preview card component"
+    }
+  },
   "notFound": {
     "heading": "404 Not Found",
     "description": "Sorry, the page you are looking for does not exist.",

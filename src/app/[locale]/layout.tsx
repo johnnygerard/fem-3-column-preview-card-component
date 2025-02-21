@@ -1,5 +1,6 @@
 import { AVAILABLE_LOCALES } from "@/constant/i18n";
 import { AppLocale } from "@/type/app-locale";
+import { getTranslation } from "@/util/get-translation";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -12,31 +13,38 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
 });
 
-const APP_NAME = "placeholder";
-const DESCRIPTION = "placeholder";
+// To keep things simple, the Open Graph image is not localized.
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> => {
+  const { locale } = await params;
+  const { metadata } = await getTranslation(locale);
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com/placeholder"),
-  title: {
-    template: `%s | ${APP_NAME}`,
-    default: APP_NAME,
-  },
-  description: DESCRIPTION,
-  icons: [
-    {
-      rel: "icon",
-      sizes: "32x32",
-      type: "image/png",
-      url: "/image/favicon.png",
+  return {
+    metadataBase: new URL("https://example.com/placeholder"),
+    title: {
+      template: `%s | ${metadata.app.name}`,
+      default: metadata.app.name,
     },
-  ],
-  openGraph: {
-    type: "website",
-    url: "/",
-    siteName: APP_NAME,
-    title: APP_NAME,
-    description: DESCRIPTION,
-  },
+    description: metadata.app.description,
+    icons: [
+      {
+        rel: "icon",
+        sizes: "32x32",
+        type: "image/png",
+        url: "/image/favicon.png",
+      },
+    ],
+    openGraph: {
+      type: "website",
+      url: "/",
+      siteName: metadata.app.name,
+      title: metadata.app.name,
+      description: metadata.app.description,
+    },
+  };
 };
 
 export const generateStaticParams = async () =>
