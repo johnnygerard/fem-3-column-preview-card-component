@@ -1,6 +1,7 @@
 {
-  "example": {
-    "title": "Hello, World!",
-    "description": "This is an example of a translation."
+  "notFound": {
+    "heading": "404 Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "link": "Back to Home"
   }
 }
