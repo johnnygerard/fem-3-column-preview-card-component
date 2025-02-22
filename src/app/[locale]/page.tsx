@@ -14,12 +14,18 @@ const Page = async ({ params }: Props) => {
   const imageNames = ["sedan", "suv", "luxury"];
 
   return (
-    <ul className="w-82">
+    <ul className="max-w-82">
       {text.vehicles.map((vehicle, index) => (
         <li key={vehicle.type}>
           <PreviewCard
             className={cn(
-              ["bg-[#E28625]", "bg-[#006971]", "bg-[#004140]"][index],
+              [
+                "bg-[#E28625] text-[#E28625]",
+                "bg-[#006971] text-[#006971]",
+                "bg-[#004140] text-[#004140]",
+              ][index],
+              index === 0 && "rounded-t-lg",
+              index === 2 && "rounded-b-lg",
             )}
             imageName={imageNames[index]}
             heading={vehicle.type}

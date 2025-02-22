@@ -77,7 +77,9 @@ const RootLayout = async ({ children, params }: Props) => {
       lang={locale}
     >
       <body className="bg-[#F2F2F2]">
-        <main className="grid min-h-screen place-items-center">{children}</main>
+        <main className="grid min-h-screen min-w-min place-items-center px-6 py-22">
+          {children}
+        </main>
         <noscript>
           <div
             style={{
