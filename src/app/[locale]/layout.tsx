@@ -3,14 +3,20 @@ import { AppLocale } from "@/type/app-locale";
 import { getTranslation } from "@/util/get-translation";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Big_Shoulders_Display, Lexend_Deca } from "next/font/google";
 import "../globals.css";
 import { memo, ReactNode } from "react";
 
-const geistSans = Geist({
+const bigShouldersDisplay = Big_Shoulders_Display({
   display: "swap",
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-big-shoulders-display",
+});
+
+const lexendDeca = Lexend_Deca({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-lexend-deca",
 });
 
 // To keep things simple, the Open Graph image is not localized.
@@ -63,7 +69,11 @@ const RootLayout = async ({ children, params }: Props) => {
 
   return (
     <html
-      className={clsx(geistSans.variable, "font-sans antialiased")}
+      className={clsx(
+        bigShouldersDisplay.variable,
+        lexendDeca.variable,
+        "font-sans antialiased",
+      )}
       lang={locale}
     >
       <body className="bg-[#F2F2F2]">
