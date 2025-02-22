@@ -23,7 +23,7 @@ const PreviewCard = ({
       <Image
         className="h-10 w-16"
         src={`/asset/image/${imageName}.svg`}
-        alt={imageName}
+        alt=""
         width="64"
         height="40"
       />
