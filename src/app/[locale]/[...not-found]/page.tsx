@@ -2,7 +2,19 @@ import AppLink from "@/component/app-link";
 import { AppLocale } from "@/type/app-locale";
 import { cn } from "@/util/cn";
 import { getTranslation } from "@/util/get-translation";
+import { Metadata } from "next";
 import { memo } from "react";
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> => {
+  const { locale } = await params;
+  const text = (await getTranslation(locale)).notFound;
+
+  return { title: text.heading };
+};
 
 type Props = {
   params: Promise<{ locale: AppLocale }>;
