@@ -6,10 +6,7 @@ type Props = {
   imageName: string;
   heading: string;
   description: string;
-  learnMore: {
-    href: string;
-    label: string;
-  };
+  learnMore: string;
 };
 
 const PreviewCard = ({ imageName, heading, description, learnMore }: Props) => {
@@ -23,7 +20,7 @@ const PreviewCard = ({ imageName, heading, description, learnMore }: Props) => {
       />
       <h1>{heading}</h1>
       <p>{description}</p>
-      <AppLink href={learnMore.href}>{learnMore.label}</AppLink>
+      <AppLink href="#">{learnMore}</AppLink>
     </div>
   );
 };
