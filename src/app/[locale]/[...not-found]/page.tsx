@@ -1,11 +1,7 @@
-import { AVAILABLE_LOCALES } from "@/constant/i18n";
 import { AppLocale } from "@/type/app-locale";
 import { getTranslation } from "@/util/get-translation";
 import Link from "next/link";
 import { memo } from "react";
-
-export const generateStaticParams = async () =>
-  AVAILABLE_LOCALES.map((locale) => ({ locale }));
 
 type Props = {
   params: Promise<{ locale: AppLocale }>;
