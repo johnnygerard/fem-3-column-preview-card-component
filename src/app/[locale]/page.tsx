@@ -1,8 +1,7 @@
-import Deployment from "@/component/deployment";
 import { memo } from "react";
 
 const HomePage = () => {
-  return <Deployment />;
+  return <div></div>;
 };
 
 export default memo(HomePage);
