@@ -19,7 +19,12 @@ const PreviewCard = ({
   learnMore,
 }: Props) => {
   return (
-    <div className={cn(className, "flex max-w-82 flex-col p-12 dt:max-w-77")}>
+    <div
+      className={cn(
+        className,
+        "flex max-w-82 flex-col p-12 dt:h-125 dt:max-w-77",
+      )}
+    >
       <Image
         className="h-10 w-16"
         src={`/asset/image/${imageName}.svg`}
@@ -42,7 +47,7 @@ const PreviewCard = ({
         className={cn(
           "flex h-12 items-center self-start rounded-full bg-[#F2F2F2] px-8",
           "border-2 hover:border-white hover:bg-transparent hover:text-white",
-          "whitespace-nowrap transition-colors",
+          "whitespace-nowrap transition-colors dt:mt-auto",
         )}
         href="#"
       >
