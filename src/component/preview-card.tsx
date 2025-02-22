@@ -19,7 +19,7 @@ const PreviewCard = ({
   learnMore,
 }: Props) => {
   return (
-    <div className={cn(className, "flex flex-col p-12")}>
+    <div className={cn(className, "flex max-w-82 flex-col p-12 dt:max-w-77")}>
       <Image
         className="h-10 w-16"
         src={`/asset/image/${imageName}.svg`}

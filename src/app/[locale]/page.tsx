@@ -14,7 +14,7 @@ const Page = async ({ params }: Props) => {
   const imageNames = ["sedan", "suv", "luxury"];
 
   return (
-    <ul className="max-w-82">
+    <ul className="dt:flex">
       {text.vehicles.map((vehicle, index) => (
         <li key={vehicle.type}>
           <PreviewCard
@@ -24,8 +24,8 @@ const Page = async ({ params }: Props) => {
                 "bg-[#006971] text-[#006971]",
                 "bg-[#004140] text-[#004140]",
               ][index],
-              index === 0 && "rounded-t-lg",
-              index === 2 && "rounded-b-lg",
+              index === 0 && "max-dt:rounded-t-lg dt:rounded-l-lg",
+              index === 2 && "max-dt:rounded-b-lg dt:rounded-r-lg",
             )}
             imageName={imageNames[index]}
             heading={vehicle.type}
