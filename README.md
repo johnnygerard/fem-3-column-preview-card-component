@@ -1,11 +1,14 @@
 # Frontend Mentor | 3-Column Preview Card Component
 
 This is my solution to
-the [3-Column Preview Card Component challenge](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU)
+the [3-Column Preview Card Component challenge](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
 from [Frontend Mentor](https://www.frontendmentor.io/).
 
-![project status](https://img.shields.io/badge/status-work_in_progress-red?style=for-the-badge)
-[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://starter-nextjs-15.vercel.app/)
+[![project status](https://img.shields.io/badge/status-solution_published-success?style=for-the-badge)](https://www.frontendmentor.io/solutions/internationalized-in-english-us-and-french-including-404-page-3SCU67YnD8)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://fem-3-column-preview-card-component-jgerard.vercel.app/)
+[![live site en-US](https://img.shields.io/badge/live_site_en--us-blue?style=for-the-badge)](https://fem-3-column-preview-card-component-jgerard.vercel.app/en-US)
+[![live site fr-FR](https://img.shields.io/badge/live_site_fr--fr-blue?style=for-the-badge)](https://fem-3-column-preview-card-component-jgerard.vercel.app/fr-FR)
+[![Lighthouse report](https://img.shields.io/badge/lighthouse-%23F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)](https://googlechrome.github.io/lighthouse/viewer/?gist=cbc850b14488ffff524198e388f6e0ff)
 
 ## Tech Stack
 
