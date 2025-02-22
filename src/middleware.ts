@@ -19,8 +19,8 @@ export const middleware = (request: NextRequest) => {
 
 export const config = {
   matcher: [
-    // Match all paths except files and Next.js internal paths
-    "/((?!_next|.*\\.[^/]+$).*)",
+    // Match all paths except Next.js internal paths and static assets
+    "/((?!_next|asset\/|opengraph-image.png).*)",
     // Optional: only run on root (/) URL
     // '/'
   ],

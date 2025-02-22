@@ -34,7 +34,7 @@ export const generateMetadata = async ({
         rel: "icon",
         sizes: "32x32",
         type: "image/png",
-        url: "/image/favicon.png",
+        url: "/asset/image/favicon.png",
       },
     ],
     openGraph: {

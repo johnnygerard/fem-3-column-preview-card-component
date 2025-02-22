@@ -13,7 +13,7 @@ const PreviewCard = ({ imageName, heading, description, learnMore }: Props) => {
   return (
     <div>
       <Image
-        src={`/image/${imageName}.svg`}
+        src={`/asset/image/${imageName}.svg`}
         alt={imageName}
         width="64"
         height="40"
