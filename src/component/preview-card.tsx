@@ -39,7 +39,11 @@ const PreviewCard = ({
         {description}
       </p>
       <AppLink
-        className="flex h-12 items-center self-start rounded-full bg-[#F2F2F2] px-8"
+        className={cn(
+          "flex h-12 items-center self-start rounded-full bg-[#F2F2F2] px-8",
+          "border-2 hover:border-white hover:bg-transparent hover:text-white",
+          "transition-colors",
+        )}
         href="#"
       >
         {learnMore}
