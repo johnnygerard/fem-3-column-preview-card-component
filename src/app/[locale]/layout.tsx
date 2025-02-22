@@ -47,6 +47,9 @@ export const generateMetadata = async ({
   };
 };
 
+// Dynamic segments not included in generateStaticParams will return a 404.
+export const dynamicParams = false;
+
 export const generateStaticParams = async () =>
   AVAILABLE_LOCALES.map((locale) => ({ locale }));
 
