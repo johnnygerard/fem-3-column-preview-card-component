@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "app": {
+      "name": "Composant de carte d'aperçu à 3 colonnes",
+      "description": "Défi Frontend Mentor : composant de carte d'aperçu à 3 colonnes"
+    }
+  },
+  "notFound": {
+    "heading": "404 Introuvable",
+    "description": "Désolé, la page que vous recherchez n'existe pas.",
+    "link": "Retour à l'accueil"
+  },
+  "learnMore": "En savoir plus",
+  "vehicles": [
+    {
+      "type": "Berlines",
+      "description": "Choisissez une berline pour son prix abordable et son excellente économie de carburant. Idéale pour se balader en ville ou lors de votre prochain voyage."
+    },
+    {
+      "type": "VUS",
+      "description": "Prenez un VUS pour son intérieur spacieux, sa puissance et sa polyvalence. Parfait pour vos prochaines vacances en famille et vos aventures tout-terrain."
+    },
+    {
+      "type": "Luxe",
+      "description": "Faites une croisière dans les meilleures marques de voitures sans les prix exorbitants. Profitez du confort accru d'une location de luxe et arrivez avec style."
+    }
+  ]
+}

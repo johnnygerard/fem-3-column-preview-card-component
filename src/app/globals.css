@@ -25,10 +25,10 @@
 }
 
 @theme {
-  --breakpoint-tb: 48em; /* Tablet: 768px */
-  --breakpoint-dt: 90em; /* Desktop: 1440px */
+  --breakpoint-dt: 64em;
 
-  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-big-shoulders-display);
+  --font-sans: var(--font-lexend-deca);
 
   --spacing: 0.25rem;
 
