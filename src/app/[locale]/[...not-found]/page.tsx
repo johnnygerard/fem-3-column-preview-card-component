@@ -12,12 +12,10 @@ const Page = async ({ params }: Props) => {
   const text = (await getTranslation(locale)).notFound;
 
   return (
-    <div className="grid min-h-screen place-items-center">
-      <div className="text-center">
-        <h1>{text.heading}</h1>
-        <p>{text.description}</p>
-        <Link href={`/${locale}`}>{text.link}</Link>
-      </div>
+    <div className="text-center">
+      <h1>{text.heading}</h1>
+      <p>{text.description}</p>
+      <Link href={`/${locale}`}>{text.link}</Link>
     </div>
   );
 };

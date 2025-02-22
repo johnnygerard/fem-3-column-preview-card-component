@@ -66,8 +66,8 @@ const RootLayout = async ({ children, params }: Props) => {
       className={clsx(geistSans.variable, "font-sans antialiased")}
       lang={locale}
     >
-      <body>
-        {children}
+      <body className="bg-[#F2F2F2]">
+        <main className="grid min-h-screen place-items-center">{children}</main>
         <noscript>
           <div
             style={{

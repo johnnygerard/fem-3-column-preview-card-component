@@ -3,15 +3,22 @@ import Image from "next/image";
 import { memo } from "react";
 
 type Props = {
+  className: string;
   imageName: string;
   heading: string;
   description: string;
   learnMore: string;
 };
 
-const PreviewCard = ({ imageName, heading, description, learnMore }: Props) => {
+const PreviewCard = ({
+  className,
+  imageName,
+  heading,
+  description,
+  learnMore,
+}: Props) => {
   return (
-    <div>
+    <div className={className}>
       <Image
         src={`/asset/image/${imageName}.svg`}
         alt={imageName}
