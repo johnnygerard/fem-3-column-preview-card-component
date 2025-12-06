@@ -3,7 +3,7 @@
     "@formatjs/intl-localematcher": "^0.6.0",
     "clsx": "^2.1.1",
     "negotiator": "^1.0.0",
-    "next": "^15.1.7",
+    "next": "^15.1.9",
     "react": "^19.0.0",
     "react-aria": "^3.37.0",
     "react-aria-components": "^1.6.0",
